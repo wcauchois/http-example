@@ -6,6 +6,19 @@
     </title>
   </head>
   <body>
-    Hello, {{.Name}}
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Body</th>
+      </tr>
+      {{range .Posts}}
+        <tr>
+          <td>{{.ID}}</td>
+          <td>{{.Name}}</td>
+          <td>{{.Body}}</td>
+        </tr>
+      {{end}}
+    </table>
   </body>
 </html>

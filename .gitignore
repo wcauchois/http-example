@@ -1,1 +1,4 @@
 *.swp
+conf.yml
+# binary
+/http-example
